@@ -2,18 +2,27 @@
 ---
 
 <div>
-  <img src='' alt='' />
   <div>
-    <img src='' alt='' />
-    <img src='' alt='' />
-    <img src='' alt='' />
+    <img src='/logo.png' alt='logo' />
   </div>
-  <nav>
-    <a href='#'>Shop</a>
-    <a href='#'>Butikker</a>
-    <a href=''>Kalender</a>
-    <a href=''>KLUB FARAOS</a>
-  </nav>
+  <div>
+    <div>
+      <img src='/search.svg' alt='search' />
+      <img src='/heart.svg' alt='liked' />
+      <img src='/cart.svg' alt='cart' />
+    </div>
+    <nav>
+      <a href='#'>Shop</a>
+      <a href='#'>Butikker</a>
+      <a href=''>Kalender</a>
+      <a href=''>KLUB FARAOS</a>
+    </nav>
+  </div>
 </div>
 
-<style></style>
+<style>
+  div {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+</style>
