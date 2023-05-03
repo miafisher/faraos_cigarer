@@ -1,18 +1,23 @@
 ---
+import Card from '../components/Card.astro';
+import Navigation from '../components/Navigation.astro';
+import '../styles/global.css';
+import '../styles/style.css';
 ---
 
-<html lang="en">
+<html lang='en'>
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <link rel="stylesheet" href="src/styles/global.css" />
-    <link rel="stylesheet" href="src/styles/style.css" />
+    <meta charset='utf-8' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='viewport' content='width=device-width' />
+    <meta name='generator' content={Astro.generator} />
+    <link rel='stylesheet' href='src/styles/global.css' />
+    <link rel='stylesheet' href='src/styles/style.css' />
     <title>Astro</title>
   </head>
   <main>
     <header>
+      <Navigation />
       <h1>14.01.01 - Faraos.dk caseopgave</h1>
       <h2>Gruppe nr. 6</h2>
       <h3>Mia Bosse Fisher</h3>
@@ -22,6 +27,8 @@
   </main>
 
   <body>
+    <Card header='hej verden' />
+
     <container>
       <h1>Designsystem</h1>
       <section>
@@ -34,15 +41,19 @@
         <h5>Faraos Cigarer</h5>
         <h6>Faraos Cigarer</h6>
         <p>Faraos Cigarer</p>
-        <p class="bold">Faraos Cigarer</p>
-        <p class="small">Faraos Cigarer</p>
-        <p class="small-bold">Faraos Cigarer</p>
+        <p class='bold'>Faraos Cigarer</p>
+        <p class='small'>Faraos Cigarer</p>
+        <p class='small-bold'>Faraos Cigarer</p>
       </section>
 
       <section>
         <h2>Farver</h2>
 
-        <img src="colors.svg" alt="farvepalette" style="height: 500px; width: 500px" />
+        <img
+          src='colors.svg'
+          alt='farvepalette'
+          style='height: 500px; width: 500px'
+        />
       </section>
 
       <section>
@@ -81,14 +92,46 @@
       <section>
         <h2>Labels</h2>
 
-        <img src="tilbud.svg" alt="tilbuds label" style="height: 150px; width: 150px" />
-        <img src="bestseller.svg" alt="bestseller label" style="height: 150px; width: 150px" />
-        <img src="nyhed.svg" alt="nyheds label" style="height: 150px; width: 150px" />
-        <img src="udsolgt.svg" alt="udsolgt label" style="height: 150px; width: 150px" />
-        <img src="kbh.svg" alt="kbh label" style="height: 150px; width: 150px" />
-        <img src="lyngby.svg" alt="lyngby label" style="height: 150px; width: 150px" />
-        <img src="odense.svg" alt="odense label" style="height: 150px; width: 150px" />
-        <img src="aarhus.svg" alt="aarhus label" style="height: 150px; width: 150px" />
+        <img
+          src='tilbud.svg'
+          alt='tilbuds label'
+          style='height: 150px; width: 150px'
+        />
+        <img
+          src='bestseller.svg'
+          alt='bestseller label'
+          style='height: 150px; width: 150px'
+        />
+        <img
+          src='nyhed.svg'
+          alt='nyheds label'
+          style='height: 150px; width: 150px'
+        />
+        <img
+          src='udsolgt.svg'
+          alt='udsolgt label'
+          style='height: 150px; width: 150px'
+        />
+        <img
+          src='kbh.svg'
+          alt='kbh label'
+          style='height: 150px; width: 150px'
+        />
+        <img
+          src='lyngby.svg'
+          alt='lyngby label'
+          style='height: 150px; width: 150px'
+        />
+        <img
+          src='odense.svg'
+          alt='odense label'
+          style='height: 150px; width: 150px'
+        />
+        <img
+          src='aarhus.svg'
+          alt='aarhus label'
+          style='height: 150px; width: 150px'
+        />
       </section>
 
       <section>
