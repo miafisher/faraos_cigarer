@@ -1,4 +1,35 @@
 ---
+const { adresse, mlÅbningstid, sÅbningstid, tlf } = Astro.props;
 ---
 
-<style></style>
+<div class='butikCardContainer'>
+  <img src='' alt='' />
+  <div class='butikCardContent'>
+    <div>
+      <h6>{adresse}</h6>
+    </div>
+    <div>
+      <p class='bodybold'>Abningstider:</p>
+      <div>
+        <p>Mandag-Lørdag</p>
+        <p>Søndag</p>
+      </div>
+      <div>
+        <p>{mlÅbningstid}</p>
+        <p>{sÅbningstid}</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p>Kontakt butikken:</p>
+    <p>+45 {tlf}</p>
+  </div>
+</div>
+<style>
+  .butikCardContent {
+    height: 540px;
+    width: 342px;
+    border: 3px solid black;
+    border-radius: 8px;
+  }
+</style>
