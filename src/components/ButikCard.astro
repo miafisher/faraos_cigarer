@@ -2,34 +2,58 @@
 const { adresse, mlÅbningstid, sÅbningstid, tlf } = Astro.props;
 ---
 
-<div class='butikCardContainer'>
-  <img src='' alt='' />
+<div>
+  <slot />
   <div class='butikCardContent'>
-    <div>
+    <div class='adresseContent'>
       <h6>{adresse}</h6>
     </div>
     <div>
       <p class='bodybold'>Abningstider:</p>
-      <div>
-        <p>Mandag-Lørdag</p>
-        <p>Søndag</p>
-      </div>
-      <div>
-        <p>{mlÅbningstid}</p>
-        <p>{sÅbningstid}</p>
+      <div class='åbningstiderContainer'>
+        <div>
+          <p>Mandag-Lørdag</p>
+          <p>Søndag</p>
+        </div>
+        <div>
+          <p class='mlÅbning'>{mlÅbningstid}</p>
+          <p class='sÅbning'>{sÅbningstid}</p>
+        </div>
       </div>
     </div>
-  </div>
-  <div>
-    <p>Kontakt butikken:</p>
-    <p>+45 {tlf}</p>
+    <div class='kontaktInfo'>
+      <p>Kontakt butikken:</p>
+      <p>+45 {tlf}</p>
+    </div>
   </div>
 </div>
 <style>
   .butikCardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     height: 540px;
     width: 342px;
     border: 3px solid black;
     border-radius: 8px;
+    gap: 3rem;
+    padding: 2rem;
+  }
+  .adresseContent {
+    text-align: center;
+  }
+
+  .åbningstiderContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .mlÅbning,
+  .sÅbning {
+    text-align: right;
+  }
+
+  .kontaktInfo {
+    display: flex;
+    justify-content: space-between;
   }
 </style>
