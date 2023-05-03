@@ -1,0 +1,69 @@
+/* * {
+  all: unset;
+  display: revert;
+  cursor: revert;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "ubuntu";
+  src: url("../font/ubuntu-bold-webfont.woff2") format("woff2");
+}
+
+h1 {
+  font-family: "ubuntu";
+  font-style: normal;
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+h2 {
+  font-family: "ubuntu";
+  font-style: normal;
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+h3 {
+  font-family: "ubuntu";
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+h4 {
+  font-family: "ubuntu";
+  font-style: normal;
+  font-size: 34px;
+  line-height: 1.1;
+}
+
+h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+h6 .bold {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 128px;
+  line-height: 1.1;
+} */
