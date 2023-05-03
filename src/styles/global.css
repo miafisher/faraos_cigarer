@@ -1,10 +1,11 @@
-/* * {
+* {
   all: unset;
   display: revert;
   cursor: revert;
   box-sizing: border-box;
 }
 
+/* font */
 @font-face {
   font-family: "ubuntu";
   src: url("../font/ubuntu-bold-webfont.woff2") format("woff2");
@@ -64,7 +65,38 @@ h6 .bold {
 p {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
-  font-size: 128px;
-  line-height: 1.1;
-} */
+  font-size: 16px;
+  line-height: 1.6;
+}
 
+p .bold {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+p .small {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+p .smallbold {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* colors */
+html {
+  --yellow-100: #f2d55d;
+  --grey-500: #5a5858;
+  --blue-100: #ccd7e8;
+  --green-100: #a4e3c4;
+  --grey-100: #dad5d5;
+}
