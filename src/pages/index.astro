@@ -1,197 +1,224 @@
 ---
-import Card from '../components/Card.astro';
-import Navigation from '../components/Navigation.astro';
-import ButikCard from '../components/ButikCard.astro';
-import Button from '../components/Button.astro';
-import Singleview from '../components/Singleview.astro';
+import Card from "../components/Card.astro";
+import Navigation from "../components/Navigation.astro";
+import ButikCard from "../components/ButikCard.astro";
+import Button from "../components/Button.astro";
+import Singleview from "../components/Singleview.astro";
 
-import '../styles/global.css';
-import '../styles/style.css';
+import "../styles/global.css";
+import "../styles/style.css";
 ---
 
-<html lang='en'>
+<html lang="en">
   <head>
-    <meta charset='utf-8' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-    <meta name='viewport' content='width=device-width' />
-    <meta name='generator' content={Astro.generator} />
-    <link rel='stylesheet' href='src/styles/global.css' />
-    <link rel='stylesheet' href='src/styles/style.css' />
-    <title>Astro</title>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="src/styles/global.css" />
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <title>Faraos Cigarer</title>
   </head>
   <main>
     <header>
       <h1>14.01.01 - Faraos.dk caseopgave</h1>
       <h2>Gruppe nr. 6</h2>
-      <h3>Mia Bosse Fisher</h3>
-      <h3>Kamilla Mørch</h3>
-      <h3>Sarah Hvid</h3>
+      <h5>Mia Bosse Fisher</h5>
+      <h5>Kamilla Mørch</h5>
+      <h5>Sarah Hvid</h5>
     </header>
-  </main>
 
-  <body>
-    <container>
-      <h1>Designsystem</h1>
-      <section>
-        <h2>Font</h2>
-
-        <h1>Faraos Cigarer</h1>
-        <h2>Faraos Cigarer</h2>
-        <h3>Faraos Cigarer</h3>
-        <h4>Faraos Cigarer</h4>
-        <h5>Faraos Cigarer</h5>
-        <h6>Faraos Cigarer</h6>
-        <p>Faraos Cigarer</p>
-        <p class='bold'>Faraos Cigarer</p>
-        <p class='small'>Faraos Cigarer</p>
-        <p class='small-bold'>Faraos Cigarer</p>
-      </section>
-
-      <section>
-        <h2>Farver</h2>
-
-        <img
-          src='colors.svg'
-          alt='farvepalette'
-          style='height: 500px; width: 500px'
-        />
-      </section>
-
-      <section>
-        <h2>Borders</h2>
-        <div class='borderContent'>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </section>
-
-      <section>
-        <h2>Border-Radius</h2>
-        <div class='borderRadiusContent'>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </section>
-
-      <section>
-        <h2>Box-Shadow</h2>
-        <div class='borderShadowContent'>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </section>
-    </container>
-
-    <container>
-      <h1>Assetliste</h1>
-
-      <section>
-        <h2>Buttons</h2>
-
-        <button></button>
-        <button></button>
-        <button></button>
-      </section>
-
-      <section>
-        <h2>Labels</h2>
-
-        <img
-          src='tilbud.svg'
-          alt='tilbuds label'
-          style='height: 150px; width: 150px'
-        />
-        <img
-          src='bestseller.svg'
-          alt='bestseller label'
-          style='height: 150px; width: 150px'
-        />
-        <img
-          src='nyhed.svg'
-          alt='nyheds label'
-          style='height: 150px; width: 150px'
-        />
-        <img
-          src='udsolgt.svg'
-          alt='udsolgt label'
-          style='height: 150px; width: 150px'
-        />
-        <img
-          src='kbh.svg'
-          alt='kbh label'
-          style='height: 150px; width: 150px'
-        />
-        <img
-          src='lyngby.svg'
-          alt='lyngby label'
-          style='height: 150px; width: 150px'
-        />
-        <img
-          src='odense.svg'
-          alt='odense label'
-          style='height: 150px; width: 150px'
-        />
-        <img
-          src='aarhus.svg'
-          alt='aarhus label'
-          style='height: 150px; width: 150px'
-        />
-      </section>
-
-      <section>
-        <h2>Shop cards</h2>
-        <div class='shopCardContent'>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </section>
-
-      <section>
-        <h2>Butik cards</h2>
-        <div class='butikCardContent'>
-          <div>
-            <ButikCard
-              adresse='Vimmelskaftet 47-49, 1161 København K'
-              mlÅbningstid='10.00-18.00'
-              sÅbningstid='10.00-17.00'
-              tlf='33 67 20 04'
-            >
-              <img
-                src='kbh.svg'
-                alt=''
-                style='width: 350px; position: absolute; z-index:10; margin-top: -7rem;'
-              />
-            </ButikCard>
+    <body>
+      <div id="container">
+        <h1>Designsystem</h1>
+        <section>
+          <div class="border">
+            <h2>Font</h2>
+            <div class="line"></div>
+            <h1>H1 Faraos Cigarer</h1>
+            <h2>H2 Faraos Cigarer</h2>
+            <h3>H3 Faraos Cigarer</h3>
+            <h4>H4 Faraos Cigarer</h4>
+            <h5>H5 Faraos Cigarer (bold)</h5>
+            <h6>H6 Faraos Cigarer</h6>
+            <h6 class="h6bold">H6 Faraos Cigarer (bold)</h6>
+            <p>Body Faraos Cigarer</p>
+            <p class="bodybold">Body Faraos Cigarer (bold)</p>
+            <p class="small">Small Faraos Cigarer</p>
+            <p class="smallbold">Small Faraos Cigarer (bold)</p>
           </div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-
-        <section>
-          <h2>Singleview</h2>
-
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
         </section>
 
         <section>
-          <h2>Navigation</h2>
-          <Navigation />
+          <div class="border">
+            <h2>Farver</h2>
+            <div class="line"></div>
+
+            <img src="colors.svg" alt="farvepalette" style="height: 500px; width: 500px" />
+          </div>
         </section>
-      </section>
-    </container>
-  </body>
+
+        <section>
+          <div class="border">
+            <h2>Borders</h2>
+            <div class="line"></div>
+            <div class="borderContent">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+
+          <section>
+            <div class="border">
+              <h2>Border-Radius</h2>
+              <div class="line"></div>
+              <div class="borderRadiusContent">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="border">
+              <h2>Box-Shadow</h2>
+              <div class="line"></div>
+              <div class="borderShadowContent">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+
+      <div id="container">
+        <h1>Assetliste</h1>
+
+        <section>
+          <div class="border">
+            <h2>Buttons</h2>
+            <div class="line"></div>
+            <button></button>
+            <button></button>
+            <button></button>
+          </div>
+        </section>
+
+        <section>
+          <div class="border">
+            <h2>Labels</h2>
+            <div class="line"></div>
+            <img src="tilbud.svg" alt="tilbuds label" style="height: 150px; width: 150px" />
+            <img src="bestseller.svg" alt="bestseller label" style="height: 150px; width: 150px" />
+            <img src="nyhed.svg" alt="nyheds label" style="height: 150px; width: 150px" />
+            <img src="udsolgt.svg" alt="udsolgt label" style="height: 150px; width: 150px" />
+            <img src="kbh.svg" alt="kbh label" style="height: 150px; width: 150px" />
+            <img src="kbh-rolle.svg" alt="kbh label" style="height: 150px; width: 150px" />
+            <img src="kbh-manga.svg" alt="kbh label" style="height: 150px; width: 150px" />
+            <img src="kbh-kort.svg" alt="kbh label" style="height: 150px; width: 150px" />
+            <img src="lyngby.svg" alt="lyngby label" style="height: 150px; width: 150px" />
+            <img src="lyngby-comics.svg" alt="lyngby label" style="height: 150px; width: 150px" />
+            <img src="odense.svg" alt="odense label" style="height: 150px; width: 150px" />
+            <img src="aarhus.svg" alt="aarhus label" style="height: 150px; width: 150px" />
+            <img src="aarhus-comics.svg" alt="aarhus label" style="height: 150px; width: 150px" />
+          </div>
+        </section>
+
+        <section>
+          <div class="border">
+            <h2>Shop cards</h2>
+            <div class="line"></div>
+            <div class="shopCardContent">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="border">
+            <h2>Butik cards</h2>
+            <div class="line-card"></div>
+            <div class="butikCardContent">
+              <div>
+                <ButikCard adresse="Vimmelskaftet 47-49, 1161 København K" mlÅbningstid="10.00-18.00" sÅbningstid="10.00-17.00" tlf="33 67 20 04">
+                  <img src="kbh.svg" alt="" style="width: 350px; position: absolute; z-index:10; margin-top: -7rem;" />
+                </ButikCard>
+              </div>
+              <div>
+                <ButikCard adresse="Nørregade 6, 1165 København K" mlÅbningstid="10.00-17.30" sÅbningstid="10.00-17.00" tlf="33 67 20 04">
+                  <img src="kbh-kort.svg" alt="" style="width: 350px; position: absolute; z-index:10; margin-top: -7rem;" />
+                </ButikCard>
+              </div>
+              <div>
+                <ButikCard adresse="Nørregade 6, 1165 København K" mlÅbningstid="10.00-17.30" sÅbningstid="10.00-17.00" tlf="33 67 20 04">
+                  <img src="kbh-manga.svg" alt="" style="width: 350px; position: absolute; z-index:10; margin-top: -7rem;" />
+                </ButikCard>
+              </div>
+              <div>
+                <ButikCard adresse="Nørregade 6, 1165 København K" mlÅbningstid="10.00-17.30" sÅbningstid="10.00-17.00" tlf="33 67 20 04">
+                  <img src="kbh-rolle.svg" alt="" style="width: 350px; position: absolute; z-index:10; margin-top: -7rem;" />
+                </ButikCard>
+              </div>
+              <div>
+                <ButikCard adresse="Nørregade 6, 1165 København K" mlÅbningstid="10.00-17.30" sÅbningstid="10.00-17.00" tlf="33 67 20 04">
+                  <img src="lyngby.svg" alt="" style="width: 350px; position: absolute; z-index:10; margin-top: -7rem;" />
+                </ButikCard>
+              </div>
+              <div>
+                <ButikCard adresse="Nørregade 6, 1165 København K" mlÅbningstid="10.00-17.30" sÅbningstid="10.00-17.00" tlf="33 67 20 04">
+                  <img src="lyngby-comics.svg" alt="" style="width: 350px; position: absolute; z-index:10; margin-top: -7rem;" />
+                </ButikCard>
+              </div>
+              <div>
+                <ButikCard adresse="Nørregade 6, 1165 København K" mlÅbningstid="10.00-17.30" sÅbningstid="10.00-17.00" tlf="33 67 20 04">
+                  <img src="odense.svg" alt="" style="width: 350px; position: absolute; z-index:10; margin-top: -7rem;" />
+                </ButikCard>
+              </div>
+              <div>
+                <ButikCard adresse="Nørregade 6, 1165 København K" mlÅbningstid="10.00-17.30" sÅbningstid="10.00-17.00" tlf="33 67 20 04">
+                  <img src="aarhus.svg" alt="" style="width: 350px; position: absolute; z-index:10; margin-top: -7rem;" />
+                </ButikCard>
+              </div>
+              <div>
+                <ButikCard adresse="Nørregade 6, 1165 København K" mlÅbningstid="10.00-17.30" sÅbningstid="10.00-17.00" tlf="33 67 20 04">
+                  <img src="aarhus-comics.svg" alt="" style="width: 350px; position: absolute; z-index:10; margin-top: -7rem;" />
+                </ButikCard>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="border">
+            <h2>Singleview</h2>
+            <div class="line"></div>
+
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </section>
+
+        <section>
+          <div class="border">
+            <h2>Navigation</h2>
+            <div class="line"></div>
+            <Navigation />
+          </div>
+        </section>
+      </div>
+    </body>
+  </main>
 
 
 </html>

@@ -3,23 +3,58 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: var(--blue-100);
 }
-
 
 @media (min-width: 768px) {
   .borderContent,
   .borderRadiusContent,
-  .borderShadowContent{
+  .borderShadowContent {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem;
   }
 
   .shopCardContent,
-  .butikCardContent{
+  .butikCardContent {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-wrap: wrap;
     gap: 3rem;
   }
+}
+
+.border {
+  border: 3px solid black;
+  border-radius: 8px;
+  padding: 5%;
+}
+
+/* body {
+  margin-left: 5%;
+  margin-right: 5%;
+} */
+
+section {
+  margin-top: 10%;
+}
+
+#container {
+  border: 3px solid black;
+  border-radius: 8px;
+  padding: 3rem;
+  margin-bottom: 5%;
+}
+
+.line {
+  display: flex;
+  height: 2px;
+  background-color: var(--grey-500);
+}
+
+.line-card {
+  display: flex;
+  height: 2px;
+  background-color: var(--grey-500);
+  margin-bottom: 20%;
 }

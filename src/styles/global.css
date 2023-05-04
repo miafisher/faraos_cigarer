@@ -15,28 +15,28 @@ h1 {
   font-family: "ubuntu";
   font-style: normal;
   font-size: 48px;
-  line-height: 1.1;
+  line-height: 1.6;
 }
 
 h2 {
   font-family: "ubuntu";
   font-style: normal;
   font-size: 40px;
-  line-height: 1.1;
+  line-height: 1.6;
 }
 
 h3 {
   font-family: "ubuntu";
   font-style: normal;
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.6;
 }
 
 h4 {
   font-family: "ubuntu";
   font-style: normal;
   font-size: 34px;
-  line-height: 1.1;
+  line-height: 1.6;
 }
 
 h5 {
@@ -44,22 +44,22 @@ h5 {
   font-weight: bold;
   font-style: normal;
   font-size: 24px;
-  line-height: 1.1;
+  line-height: 1.6;
 }
 
 h6 {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-size: 20px;
-  line-height: 1.1;
+  line-height: 1.6;
 }
 
-h6 .bold {
+.h6bold {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-style: normal;
   font-size: 20px;
-  line-height: 1.1;
+  line-height: 1.6;
 }
 
 p {
@@ -69,7 +69,7 @@ p {
   line-height: 1.6;
 }
 
-p .bold {
+.bodybold {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-style: normal;
@@ -77,14 +77,14 @@ p .bold {
   line-height: 1.6;
 }
 
-p .small {
+.small {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-size: 15px;
   line-height: 1.6;
 }
 
-p .smallbold {
+.smallbold {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-style: normal;

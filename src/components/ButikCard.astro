@@ -4,24 +4,24 @@ const { adresse, mlÅbningstid, sÅbningstid, tlf } = Astro.props;
 
 <div>
   <slot />
-  <div class='butikCardContent'>
-    <div class='adresseContent'>
+  <div class="butikCardContent">
+    <div class="adresseContent">
       <h6>{adresse}</h6>
     </div>
     <div>
-      <p class='bodybold'>Abningstider:</p>
-      <div class='åbningstiderContainer'>
+      <p class="bodybold">Abningstider:</p>
+      <div class="åbningstiderContainer">
         <div>
           <p>Mandag-Lørdag</p>
           <p>Søndag</p>
         </div>
         <div>
-          <p class='mlÅbning'>{mlÅbningstid}</p>
-          <p class='sÅbning'>{sÅbningstid}</p>
+          <p class="mlÅbning">{mlÅbningstid}</p>
+          <p class="sÅbning">{sÅbningstid}</p>
         </div>
       </div>
     </div>
-    <div class='kontaktInfo'>
+    <div class="kontaktInfo">
       <p>Kontakt butikken:</p>
       <p>+45 {tlf}</p>
     </div>
