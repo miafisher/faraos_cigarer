@@ -61,20 +61,24 @@ import "../styles/style.css";
         <section>
           <div class="border">
             <h2>Borders</h2>
-            <div class="line"></div>
+            <div class="line-card"></div>
             <div class="borderContent">
-              <div></div>
-              <div></div>
-              <div></div>
+              <div class="border-thin"></div>
+              <div class="border-thinner"></div>
+              <div class="border-thinnerGrey"></div>
             </div>
           </div>
 
           <section>
             <div class="border">
               <h2>Border-Radius</h2>
-              <div class="line"></div>
+              <div class="line-card"></div>
               <div class="borderRadiusContent">
-                <div></div>
+                <div class="border-sm"></div>
+                <div class="border-md"></div>
+                <div class="border-lg"></div>
+                <div class="border-xl"></div>
+                <div class="border-rounded"></div>
                 <div></div>
                 <div></div>
               </div>
@@ -84,7 +88,7 @@ import "../styles/style.css";
           <section>
             <div class="border">
               <h2>Box-Shadow</h2>
-              <div class="line"></div>
+              <div class="line-card"></div>
               <div class="borderShadowContent">
                 <div></div>
                 <div></div>
@@ -101,10 +105,13 @@ import "../styles/style.css";
         <section>
           <div class="border">
             <h2>Buttons</h2>
-            <div class="line"></div>
-            <button></button>
-            <button></button>
-            <button></button>
+            <div class="line-card"></div>
+            <div>
+              <Button button="Læg i kurv" />
+            </div>
+            <div>
+              <Button button="Få besked" />
+            </div>
           </div>
         </section>
 
@@ -134,16 +141,12 @@ import "../styles/style.css";
             <div class="line-card"></div>
             <div class="shopCardContent">
               <div>
-                <Card title="Sherlock Holmes" subtitle="DK Comics" description="Sherlock Holmes og vampyrerne i London." price="DKK 390" button="button">
+                <Card title="Sherlock Holmes" subtitle="DK Comics" description="Sherlock Holmes og vampyrerne i London." price="DKK 390" button="Læg i kurv">
                   <img src="nyhed.svg" alt="" style="width: 188px; position: absolute; z-index:10; margin-top: -8rem; margin-left:-5rem;" />
 
                   <img src="sherlock.webp" alt="" style="width: 200px;" />
                 </Card>
               </div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
             </div>
           </div>
         </section>
