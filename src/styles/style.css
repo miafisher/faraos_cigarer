@@ -20,6 +20,8 @@ header {
     display: flex;
     /* flex-direction: row; */
     flex-wrap: wrap;
+  }
+  .butikCardContent {
     gap: 3rem;
   }
 }

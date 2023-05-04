@@ -1,8 +1,61 @@
 ---
-// const header = Astro.props.header;
-// const text = Astro.props.text;
-
-const { header } = Astro.props;
+const { title, subtitle, description, price, button } = Astro.props;
 ---
 
-<style></style>
+<div class="shopCardContent">
+     <img src="img.svg" alt="" style="width: 10px; " />
+  <slot />
+  <div class="card-container">
+    <h6 class="title">{title}</h6>
+    <img class="heart" src="heart.svg" alt="heart icon" style="width: 20px;" />
+    <p class="subtitle">{subtitle}</p>
+    <p class="description">{description}</p>
+    <p class="price">{price}</p>
+    <button class="button">{button}</button>
+    <img src="green_small_lagerstatus.svg" alt="" style="width: 15px;" />
+    <p>Lagerstatus</p>
+  </div>
+</div>
+
+<style>
+  .shopCardContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 570px;
+    width: 342px;
+    border: 3px solid black;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1FR;
+  }
+
+  .title {
+    grid-column: span 3 / span 3;
+  }
+  .heart {
+    grid-column: 4;
+  }
+
+  .subtitle {
+    grid-column: span 3 / span 3;
+  }
+
+  .description {
+    grid-column: span 3 / span 3;
+  }
+
+  .price {
+    grid-column: span 2 / span 2;
+  }
+
+  .button {
+    grid-column: 3
+    grid-row: span 2 / span 2;
+  }
+
+</style>
